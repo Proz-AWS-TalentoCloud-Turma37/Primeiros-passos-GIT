@@ -192,6 +192,8 @@
   ```bash
   # O comando git pull atualiza o repositório remoto com as mudanças do repositório local.
   git pull
+  ou
+  git pull origin main
   ```
 
   - Clonando repositório remoto
