@@ -112,11 +112,11 @@
   - Configurando o ambiente
   >
   ```bash
-  # Identificação
+  # Inicia com a Identificação
   git config --global user.name "Seu nome"
   git config --global user.email "Seu email"
   
-  # Verificar configurações atuais
+  # Verificar se esta ok as configurações atuais
   git config --list
   ```
   - Iniciando um projeto
@@ -142,7 +142,7 @@
   # Ou seja, o comando informa ao Git para rastrear o referido arquivo. Caso o arquivo já esteja sob controle do Git, ele o atualiza.
 
   # Adicionar somente um arquivo
-  git add arquivo.txt
+  git add nomearquivo.txt
 
   # Adicionar todos os arquivos
   git add .  
@@ -170,12 +170,21 @@
   # O comando git remote add adiciona um repositório remoto ao projeto.
   git remote add origin https://github.com/<usuário>/<repositório>.git
   ```
+  
+  - Renomeando branch de Master para main
+
+  ```bash
+  # O comando git branch -m <novonome>
+  git branch -m main
+  ```
 
   - Enviando mudanças para o repositório remoto
   
   ```bash
   # O comando git push envia as mudanças para o repositório remoto.
-  git push -u origin master
+  git push -u origin main
+  caso não funcione tente o force
+  git push -f origin main
   ```
 
   - Atualizando o repositório remoto
